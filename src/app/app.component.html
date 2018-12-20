@@ -1,0 +1,23 @@
+<form class="submission" [formGroup]='user' (ngSubmit)='userData(user.value)'>
+
+  <label for='first-name'>First Name</label>
+  <input type="text" formControlName='firstName' id='first-name'>
+  <div *ngIf="!user.controls['firstName'].valid && user.controls['firstName'].touched" class="invalidMessage">
+    <p>hey jude</p>
+  </div>
+
+  <label for='last-name'>Last Name</label>
+  <input type="text" formControlName='lastName' id='last-name'>
+  
+  <label for='email'>Email</label>
+  <input type="email" formControlName='email' id="email">
+
+  <label for='phone'>Phone</label>
+  <input type="tel" formControlName="phone" id="phone">
+
+  <label formControlName='message' for='message'>Message</label>
+  <textarea id="message"></textarea>
+
+  <input type="submit" value="send" [disabled]='!user.valid' id="btn" >
+
+</form>

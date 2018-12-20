@@ -1,0 +1,43 @@
+.submission{
+    max-width: 500px;
+    margin: 3rem auto;
+    border: 2px solid #A5C663;
+    padding: 2rem;
+}
+label{
+    display: block;
+    padding: 1rem 0.25rem;
+    text-transform: uppercase;
+    display: block;
+}
+input, textarea {
+    width: 100%;
+    border: 1px solid #003C1E;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+#btn{
+    border: 0;
+    background: #872D62;
+    color: white;
+    padding: 2%;
+    margin: 1rem auto;
+    width: 21%;
+    text-transform: uppercase;
+    cursor: pointer;
+&:hover{
+    background: #440028;
+}
+}
+
+body{
+    font-family: sans-serif;
+}
+.invalidMessage{
+    width: 100%;
+    padding: .5rem;
+    background-color: #983352;
+    color: white;
+    font-size: 12px;
+}
